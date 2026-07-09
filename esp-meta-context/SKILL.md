@@ -13,6 +13,7 @@ A meta-skill that manages a project's `.esper/shared_context/` by coordinating o
 1. **Initialize/Verify**:
    - Check if `<project-root>/.esper/shared_context/` exists. If it needs to be created, create it gracefully and immediately prompt the user to add `.esper/` to `.gitignore`.
 2. **Coordinate Updates**:
+   - **CRITICAL**: You must ALWAYS prompt the user for explicit permission before executing AST mapping or RAG indexing.
    - Utilize `esp-repo-map` to refresh the AST map if the codebase has changed significantly.
    - Utilize `esp-rag` to index any new critical bug fixes, logs, or architectural decisions.
 3. **Synthesis**:
