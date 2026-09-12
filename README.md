@@ -24,6 +24,13 @@ This repository contains modular skills designed to extend the capabilities of t
 - **`esp-scaffold`**: Scaffolds new features based on strict architectural alignment.
 - **`esp-update-changelog`**: Automatically updates `CHANGELOG.md` based on project history and diffs.
 
+## Optional Addons
+
+Addons are heavily specialized skills that require external software or specific MCP servers. They are placed in the `addons/` directory to prevent cluttering the core workflow. Users can symlink or move these into the main folder if they want to activate them.
+
+- **`addons/esp-qgis`**: Comprehensive QGIS automation skill using the `qgis-mcp` bridge for spatial analysis and map processing.
+- **`addons/esp-renderdoc`**: (Coming soon) Graphics debugging and frame capture automation.
+
 ## Installation
 
 To install these skills globally, simply clone this repository directly into your global skills directory under a dedicated `esper-skills` folder:
